@@ -66,18 +66,50 @@ When we look at the summaries for the three lots, there's clearly a problem on l
 ---
 The next hypothesis we are going to test is perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
+The one-sample t-test is used to determine whether there is a statistical difference between the means of a sample dataset and a hypothesized, potential population dataset.
+
 ![t_test](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test.png)
+
+Assuming our significance level was the common 0.05 percent, our **p-value** is above our significance level (**0.06**). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+### Lot 1
 ![t_test_lot1](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test_lot1.png)
+
+Same thing happens with the **p-value** in **lot 1** with a **1.0**. We do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+### Lot 2
 ![t_test_lot2](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test_lot2.png)
+
+Similar results for **lot 2**, a **p-value** of **0.6**. We do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+### Lot 3
 ![t_test_lot3](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test_lot3.png)
 
+Now, for **lot 3** we have a **p-value** of **0.04** sufficient statistical evidence to reject the null hypothesis and showing that the two means are not statistically similar.
 
 ## Study Design: MechaCar vs Competition
 ---
 
+The most important thing to ensure about MechaCar is that is going to be up to the competitors on the market, to ensure the success of the product, we would have to perform an analysis that determines the main characteristics and differentiators that the consumers are looking for and comparing whenever buying a product of its kind.
 
 
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+### What metric or metrics are you going to test?
+Some of the possible metrics we could use are:
+- Price range
+- Maintenance cost
+- Safety rating
+- Fuel efficiency
+
+We need to ensure that the metrics we are going to use are measurable to be able to evaluate them.
+
+### What is the null hypothesis or alternative hypothesis?
+Then, we need to use a model to determine how much every metric actually influence the success of our product and focus of developing them further.
+
+- The Null Hypothesis would be to test, using linear regression, that the slope of our linear regression is zero.
+- On the other hand, our alternative hypothesis would be that the slope is in fact not zero.
+
+### What statistical test would you use to test the hypothesis? And why?
+A Linear Regression model would allow us to actually see the significance of all our variables as well as determine if omitting of adding data points would be the best course of action.
+
+### What data is needed to run the statistical test?
+We would need both data from the competition as well as for our prototype product, we would need input to determine from consumers which product they would choose if given multiple choices.
