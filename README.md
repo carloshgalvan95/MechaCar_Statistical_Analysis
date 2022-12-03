@@ -18,17 +18,30 @@ To first evaluate the data we have, we will perform linear regression on out dat
 - Spoiler Angle
 - Ground Clearance
 - AWD
-- Miles per Gallon
+- **Miles per Gallon(MPG)**
 
-- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-- Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+To determine which variables provide a significant contribution to the linear model, we must look at the individual variable p-values.
+
+In the summary output, each **Pr(>|t|)** value represents the probability that each coefficient contributes a random amount of variance to the linear model.
+
+According to our results, **vehicle lenght** and **ground clearance** (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model.
+
+Depending on our dataset, a significant intercept could mean that the significant features (such as vehicle lenght and ground clearance) may need scaling or transforming to help improve the predictive power of the model. Alternatively, it may mean that there are other variables that can help explain the variability of our dependent variable that have not been included in our model. 
+
+
+### Is the slope of the linear model considered to be zero? Why or why not?
+the **p-value** of our linear regression analysis is **5.35 x 10-11**, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
+
+### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+From our linear regression model, the **r-squared** value is **0.71**, which means that roughly 71%% of the variablilty of our dependent variable (MPG) is explained using this linear model. 
 
 ## Summary Statistics on Suspension Coils
 
 - Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 ## T-Tests on Suspension Coils
+
 
 ## Study Design: MechaCar vs Competition
 
