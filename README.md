@@ -64,6 +64,13 @@ When we look at the summaries for the three lots, there's clearly a problem on l
 
 ## T-Tests on Suspension Coils
 ---
+The next hypothesis we are going to test is perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+![t_test](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test.png)
+![t_test_lot1](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test_lot1.png)
+![t_test_lot2](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test_lot2.png)
+![t_test_lot3](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/t-test_lot3.png)
+
 
 ## Study Design: MechaCar vs Competition
 ---
