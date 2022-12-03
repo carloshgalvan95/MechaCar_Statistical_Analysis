@@ -1,5 +1,4 @@
 # MechaCar_Statistical_Analysis
-
 The purpose of this analysis is to aid in the production and manufacturing process of the MechaCar prototype. For this analysis our ways to interpret the data will mainly be:
 
 - Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
@@ -8,7 +7,7 @@ The purpose of this analysis is to aid in the production and manufacturing proce
 - Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
 
 ## Linear Regression to Predict MPG
-
+---
 ![linear_regression](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/linear_regression.png)
 
 To first evaluate the data we have, we will perform linear regression on out dataset that contains information points on the prototypes, our target variable to predict will be MPG, the metrics we have are:
@@ -21,6 +20,7 @@ To first evaluate the data we have, we will perform linear regression on out dat
 - **Miles per Gallon(MPG)**
 
 ### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+---
 To determine which variables provide a significant contribution to the linear model, we must look at the individual variable p-values.
 
 In the summary output, each **Pr(>|t|)** value represents the probability that each coefficient contributes a random amount of variance to the linear model.
@@ -31,20 +31,41 @@ Depending on our dataset, a significant intercept could mean that the significan
 
 
 ### Is the slope of the linear model considered to be zero? Why or why not?
+---
 the **p-value** of our linear regression analysis is **5.35 x 10-11**, which is much smaller than our assumed significance level of 0.05%. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
 
 ### Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+---
 From our linear regression model, the **r-squared** value is **0.71**, which means that roughly 71%% of the variablilty of our dependent variable (MPG) is explained using this linear model. 
 
 ## Summary Statistics on Suspension Coils
+---
+In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
+
+For this, we will see summary statistics for:
+- The suspension coil’s PSI continuous variable across all manufacturing lots
+- The following PSI metrics for each lot:
+    - Mean 
+    - Median
+    - Variance
+    - Standard Deviation
+    
+![total_summary](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/total_summary.png)
+![lot_summary](https://github.com/carloshgalvan95/MechaCar_Statistical_Analysis/blob/main/Resources/lot_summary.png)
 
 - Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-## T-Tests on Suspension Coils
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.
 
+While this is true if we just look at the total summary of the three lots, we can see the **variance** is 62 and the **Standard Deviation** is roughly 8 which ensures not more than 100 pounds per square inch limitation will be exceeded.
+
+When we look at the summaries for the three lots, there's clearly a problem on lot 3, the **variance** is 170 which means that in some test points the 100 pounds per square inch limitation is being exceeded.
+
+## T-Tests on Suspension Coils
+---
 
 ## Study Design: MechaCar vs Competition
-
+---
 
 
 
